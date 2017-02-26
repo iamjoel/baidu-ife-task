@@ -34,6 +34,7 @@
       el: document.querySelector('#aqi-list'),
       render: function(listData) {
         var html = listData.map(function(each, index) {
+          // 这边用 ES6 的模板字符串写法会更简洁
           return ['<li>第', CHINESE_NUMS.charAt(index), '名：', each[0], ',', each[1], '</li>'].join('')
         })
         this.el.innerHTML = html
@@ -43,8 +44,8 @@
 
     var renderData = aqiData.filter(function(each) {
       return each[1] > 60
-    }).sort(function(a, b) {
-      return a > b
+    }).sort(function(a, b) { // 污染值从大到小排列
+      return a < b
     })
 
     airList.render(renderData)
