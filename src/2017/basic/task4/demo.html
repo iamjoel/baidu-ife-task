@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>任务四：定位和居中问题</title>
+  <style>
+    html{
+      height: 100%;
+    }
+    body{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .target{
+      position: relative;
+      width: 400px;
+      height: 200px;
+      overflow: hidden;
+      background-color: #ccc;
+    }
+    .target__item{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #fc0;
+    }
+    .target__item:first-child{
+      top: -50px;
+      left: -50px;
+    }
+    .target__item:last-child{
+      right: -50px;
+      bottom: -50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="target">
+    <div class="target__item"></div>
+    <div class="target__item"></div>
+  </div>
+</body>
+</html>
