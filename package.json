@@ -2,7 +2,7 @@
   "name": "",
   "version": "0.0.1",
   "description": "",
-  "main": "index.html",
+  "main": "src/index.html",
   "scripts": {
     "publish": "node tools/publish"
   },
@@ -11,8 +11,5 @@
     "type": "git",
     "url": "https://github.com/iamjoel/baidu-ife-task"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "gh-pages": "0.11.0"
-  }
+  "license": "MIT"
 }
