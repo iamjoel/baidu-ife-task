@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  color: #333;
+  padding: 30px;
+}
+.box{
+  box-sizing: border-box;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.box:last-child{
+  margin-right: 0;
+}
+.logo{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #666;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.group{
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+.group__logo{
+  flex-shrink: 0;
+  width: 200px;
+}
+.group__logo .logo{
+  margin-right: 10px;
+}
+.group__aside{
+  flex-shrink: 0;
+  width: 120px;
+}
+.group__aside ul{
+  margin: 0;
+  padding: 0;
+}
+.group__aside .logo{
+  margin-bottom: 10px;
+}
+.group__aside .logo:last-child{
+  margin-bottom: 0;
+}
